@@ -16,6 +16,11 @@ body {
   align-items: center;
   background-color: #282828;
   color: #ebdbb2;
+  background-image: url("./image/1-bg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 a {
