@@ -9,6 +9,11 @@ body {
   height: 100vh;
 }
 
+@font-face {
+  font-family: "Pixelar";
+  src: URL("./fonts/PixelarRegular.ttf") format("truetype");
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -21,12 +26,13 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-family: "Pixelar", san-serif;
 }
 
 a {
   margin-top: 25px;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 2rem;
   color: #ebdbb2;
   background-color: #3c3836;
   padding: 10px 20px;
@@ -63,13 +69,13 @@ a:hover {
 }
 
 .screen .top {
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #b8bb26;
   text-align: right;
 }
 
 .screen .bottom {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #ebdbb2;
   text-align: right;
@@ -140,7 +146,7 @@ button:active {
 
 @media (min-width: 2000px) and (min-height: 1600px) {
   a {
-    font-size: 2rem;
+    font-size: 3.5rem;
     padding: 20px 40px;
   }
 
@@ -158,11 +164,11 @@ button:active {
   }
 
   .screen .top {
-    font-size: 2.4rem;
+    font-size: 3.5rem;
   }
 
   .screen .bottom {
-    font-size: 4rem;
+    font-size: 5.5rem;
   }
 
   .btn-container {
