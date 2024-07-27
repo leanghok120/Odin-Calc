@@ -137,3 +137,41 @@ button:active {
   background-color: #98971a;
   box-shadow: inset 3px 5px #282828;
 }
+
+@media (min-width: 2000px) and (min-height: 1600px) {
+  a {
+    font-size: 2rem;
+    padding: 20px 40px;
+  }
+
+  .calculator {
+    width: 46rem;
+    height: 74rem;
+    padding: 50px;
+    border-radius: 35px;
+  }
+
+  .screen {
+    height: 170px;
+    padding: 20px;
+    box-shadow: inset 0 0 20px #000;
+  }
+
+  .screen .top {
+    font-size: 2.4rem;
+  }
+
+  .screen .bottom {
+    font-size: 4rem;
+  }
+
+  .btn-container {
+    gap: 16px;
+    margin-top: 30px;
+  }
+
+  button {
+    font-size: 3.6rem;
+    border-radisu: 30px;
+  }
+}
