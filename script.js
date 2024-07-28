@@ -16,8 +16,12 @@ const threeBtn = document.getElementById("three");
 const subtractBtn = document.getElementById("subtract");
 const zeroBtn = document.getElementById("zero");
 
+const buttons = document.querySelectorAll("button");
+
 const displayTop = document.querySelector(".screen .top");
 const displayBottom = document.querySelector(".screen .bottom");
+
+const keypressSound = new Audio("sounds/keystroke.wav");
 
 let currentInput = "";
 let firstOperand = null;
@@ -94,6 +98,15 @@ function handlePeriodClick() {
     updateDisplay();
   }
 }
+
+function playSound() {
+  keypressSound.currentTime = 0;
+  keypressSound.play();
+}
+
+buttons.forEach((button) => {
+  button.addEventListener("click", playSound);
+});
 
 periodBtn.addEventListener("click", handlePeriodClick);
 clearBtn.addEventListener("click", handleClearClick);
